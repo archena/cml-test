@@ -2,7 +2,7 @@ name: train-model
 on: [push]
 jobs:
   run:
-    runs-on: docker://ghcr.io/iterative/cml:0-dvc2-base1
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
